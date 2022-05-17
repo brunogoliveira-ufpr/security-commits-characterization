@@ -1,4 +1,6 @@
-This tutorial is a guide to replicate the results from the article: Characterizing Security-related Commits of JavaScript Engines
+<title>Characterizing Security-related Commits of JavaScript Engines</title>
+
+This tutorial is a guide to replicate the results from the article. 
 
 Projects
 Commits
@@ -45,5 +47,3 @@ We verified what files are being modified by security-related commits and others
 RQ3
 
 We randomly selected 5% from the security-related commits and classified the type of vulnerability. We increased the JavaScriptCore and Hermes number to 50, to have enough data for the classification. The type of vulnerability identification was done by seaching for keywords on the title and messages, inspecting external references (as CVEs) and finally interpreted the messages for classification.
-
-teste
