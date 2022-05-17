@@ -2,13 +2,8 @@
 
 This tutorial is a guide to replicate the results from the article. 
 
-Projects
-Commits
-Tools
-Methodology
-
 ## Projects	
-The four JavaScript engines chosen for the assesment are GitHub open-source projects: v8, ChakraCore, JavaScriptCore and Hermes. 
+Four JavaScript engines were chosen for the assesment, they are all GitHub open-source projects: v8, ChakraCore, JavaScriptCore and Hermes. 
 To start the process is necessary to download the projects.
 
 git clone https://github.com/v8/v8
