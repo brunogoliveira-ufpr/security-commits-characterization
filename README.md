@@ -1,4 +1,4 @@
-<title>Characterizing Security-related Commits of JavaScript Engines</title>
+Characterizing Security-related Commits of JavaScript Engines
 
 This tutorial is a guide to replicate the results from the article. 
 
