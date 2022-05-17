@@ -12,9 +12,13 @@ The four JavaScript engines chosen for the assesment are GitHub open-source proj
 To start the process is necessary to download the projects.
 
 git clone https://github.com/v8/v8
+
 git clone https://github.com/chakra-core/ChakraCore
+
 git clone https://github.com/WebKit/WebKit
+
 git clone https://github.com/facebook/hermes
+
 
 - Commits
 We collected the commits hashes from all packages utilizing the git comnmand-line utility inside each project folder.
