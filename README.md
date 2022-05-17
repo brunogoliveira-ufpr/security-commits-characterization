@@ -33,7 +33,8 @@ To download and install Understand, it is required to register at https://www.sc
 
 ### RQ1
 
-We utilized the following script for extracting the messages from each project: pygithub_getmessages.py
+We utilized the following script for extracting the messages from each project: pygithub_getmessages.py.
+
 Then, we utilized scikit-learn library to identify security-related commits by their messages: classifier.py. We randomly selected other commits for the evaluation, same amount of security-related commits for each engine.
 
 Then we extracted software metrics with PyDriller using the script: py_tests.py and Understand using the bash script: und_extraction.sh. We utilized the processing.py Python script to calculate the statistics test and effect size from each metric.
