@@ -17,7 +17,7 @@ git clone https://github.com/facebook/hermes
 ## Commits
 We collected the commits hashes from all packages utilizing the git comnmand-line utility inside each project folder.
 
-git log --pretty=format:%H > $project_hashes.txt
+git log --pretty=format:%H > project_hashes.txt
 
 Since JavaScriptCore is inside the WebKit package, we collected only commits related to the JavaScriptCore folder.
 
