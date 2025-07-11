@@ -33,11 +33,59 @@ To download and install Understand, it is required to register at https://www.sc
 
 ### RQ1
 
-We utilized the following script for extracting the messages from each project: pygithub_getmessages.py.
+We used the following script to extract messages from each project: pygithub_getmessages.py.
 
 Then, we utilized scikit-learn library to identify security-related commits by their messages: classifier.py. We randomly selected other commits for the evaluation, same amount of security-related commits for each engine.
 
 Then we extracted software metrics with PyDriller using the script: py_tests.py and Understand using the bash script: und_extraction.sh. We utilized the processing.py Python script to calculate the statistics test and effect size from each metric.
+
+| Metric                      | What is |
+|-----------------------------|-------------|
+| lines_added                 | Number of lines added in a commit or change. |
+| lines_removed               | Number of lines removed in a commit or change. |
+| lines_added+removed         | Total lines changed (added + removed). |
+| diff_methods                | Methods with any differences between versions. |
+| changed_methods             | Number of methods that have been changed. |
+| AltAvgLineBlank             | Average number of blank lines per file (alternative tool). |
+| AltAvgLineCode              | Average number of code lines per file (alternative tool). |
+| AltAvgLineComment           | Average number of comment lines per file (alternative tool). |
+| AltCountLineBlank           | Total blank lines (alternative tool). |
+| AltCountLineComment         | Total comment lines (alternative tool). |
+| AvgCyclomatic               | Average cyclomatic complexity across methods. |
+| AvgCyclomaticModified       | Average modified cyclomatic complexity. |
+| AvgCyclomaticStrict         | Average strict cyclomatic complexity. |
+| AvgEssential                | Average essential complexity (structuredness). |
+| AvgLine                     | Average number of lines per method or file. |
+| AvgLineBlank                | Average blank lines per method or file. |
+| AvgLineCode                 | Average code lines per method or file. |
+| AvgLineComment              | Average comment lines per method or file. |
+| CountDeclClass              | Number of class declarations. |
+| CountLine                   | Total lines of code. |
+| CountLineBlank              | Number of blank lines. |
+| CountLineComment            | Number of comment lines. |
+| CountLineInactive           | Number of lines excluded by preprocessor directives. |
+| CountSemicolon              | Total number of semicolons (can approximate statement count). |
+| CountStmt                   | Total number of statements. |
+| CountStmtDecl               | Number of declaration statements. |
+| CountStmtEmpty              | Number of empty statements. |
+| CountStmtExe                | Number of executable statements. |
+| MaxCyclomatic               | Maximum cyclomatic complexity of any method. |
+| MaxCyclomaticModified       | Maximum modified cyclomatic complexity. |
+| MaxEssential                | Maximum essential complexity of any method. |
+| RatioCommentToCode          | Ratio of comment lines to code lines. |
+| SumCyclomatic               | Total cyclomatic complexity across all methods. |
+| SumCyclomaticModified       | Total modified cyclomatic complexity. |
+| AltCountLineCode            | Total number of code lines (alternative tool). |
+| CountLineCodeDecl           | Number of lines with code declarations. |
+| CountDeclFunction           | Number of function declarations. |
+| CountLinePreprocessor       | Number of preprocessor directive lines. |
+| CountLineCode               | Number of code lines. |
+| CountLineCodeExe            | Number of executable code lines. |
+| MaxCyclomaticStrict         | Maximum strict cyclomatic complexity. |
+| SumCyclomaticStrict         | Sum of strict cyclomatic complexity across methods. |
+| SumEssential                | Sum of essential complexity across methods. |
+| MaxNesting                  | Maximum nesting depth in control structures. |
+
 
 ### RQ2
 
